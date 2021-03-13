@@ -23,8 +23,10 @@ We created new CSVs with only the 2017-18 season data that we were looking at.
 
 We tried to index on player name, but had issues turning the indexed DF into SQL, so we scrapped this step.
 At this point, the dataframes were ready to be imported into PGAdmin. We created a connection to our database (NBA2_db). An error we came across was our column names – they had to match with the SQL table column names, so we had to go back and rename the columns in our Pandas DFs.
+
 •	(columns={"Player": "player",
                                  "Team Abv.": "team_abv", "Salary": "salary"})
+                                 
 •	(columns={'Player':'player', 'Team Name':'team_name', 
                                                         'Position':'position', 'Season':'season'})
 
