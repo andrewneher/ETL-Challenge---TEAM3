@@ -1,9 +1,13 @@
 # ETL-Challenge---TEAM3
 
 To begin, we extracted NBA Player of the Week (‘POTW’) and NBA Salary data from two datasets found on Kaggle:
+
 •	Player of the Week data
+
 •	NBA Salary Data
+
 These datasets were both available in CSV format.
+
 Next, we loaded these into a Jupyter Notebook and created dataframes for both POTW and Salary data. Because salary data was only available for 2017-2018, we used the .loc() function to isolate that season for both POTW and Salary data to trim the dataframe to just the 2017-18 NBA season.
 
 We created a copy of the clean DF so that we could avoid destructive edits, if necessary.
